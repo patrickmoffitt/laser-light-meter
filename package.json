@@ -1,0 +1,41 @@
+{
+  "name": "laser-light-meter",
+  "productName": "Laser Light Meter",
+  "firingTimeFactor": 7,
+  "version": "1.6.5",
+  "description": "A light (power) meter for PWM laser light.",
+  "main": "index.js",
+  "repository": "https://github.com/patrickmoffitt/laser-light-meter",
+  "author": "Patrick K. Moffitt, CSM, M.A.",
+  "license": "MIT",
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=img/LightMeter.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=img/LightMeter.ico --prune=true --out=release-builds",
+    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=img/LightMeter.png --prune=true --out=release-builds"
+  },
+  "dependencies": {
+    "app-module-path": "^2.2.0",
+    "bootstrap": "4.0.0-alpha.5",
+    "cheerio": "^0.22.0",
+    "connect": "^3.6.0",
+    "electron": "1.4.1",
+    "jquery": "3.1.1",
+    "serve-static": "^1.12.1",
+    "sql.js": "^0.4.0",
+    "tether": "^1.4.0",
+    "treekill": "^1.0.0"
+  },
+  "standard": {
+    "globals": [
+      "model",
+      "view",
+      "controller",
+      "config",
+      "app",
+      "$",
+      "sqlite3"
+    ]
+  }
+}
