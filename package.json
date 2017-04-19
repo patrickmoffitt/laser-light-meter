@@ -2,7 +2,7 @@
   "name": "laser-light-meter",
   "productName": "Laser Light Meter",
   "firingTimeFactor": 7,
-  "version": "1.6.5",
+  "version": "0.0.0",
   "description": "A light (power) meter for PWM laser light.",
   "main": "index.js",
   "repository": "https://github.com/patrickmoffitt/laser-light-meter",
