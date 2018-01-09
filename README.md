@@ -8,7 +8,11 @@ This program also fires the laser asynchronously via remote-command-execution on
 
 ![Sample Data](images/meter_readings.png)
 
-The Arduino is connected to the host computer via USB tty. The tty data are collected by means of a Python script that receives JSON formatted data from the Arduino and saves it in files in the applications' data folder. Once all the data files have been collected another Python script runs a machine learning algorithm over the data to produce a model that detects features in the data that allow it to categorize each sample by the duty cycle in the signal.
+The Arduino is connected to the host computer via USB tty. The tty data are collected by means of a Python script that receives JSON formatted data from the Arduino and saves it in files in the applications' data folder.
+
+<img alt="data collection" src="./images/data_collection.png" width="888px"/>
+
+Once all the data files have been collected another Python script runs a machine learning algorithm over the data to produce a model that detects features in the data that allow it to categorize each sample by the duty cycle in the signal.
 
 <img alt="histogram" src="./images/mean_variance_1515443996_data_by_1515428959_model.svg" width="888px"/>
 
