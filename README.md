@@ -10,11 +10,11 @@ This program also fires the laser asynchronously via remote-command-execution on
 
 The Arduino is connected to the host computer via USB tty. The tty data are collected by means of a Python script that receives JSON formatted data from the Arduino and saves it in files in the applications' data folder. Once all the data files have been collected another Python script runs a machine learning algorithm over the data to produce a model that detects features in the data that allow it to categorize each sample by the duty cycle in the signal.
 
-![mean variance](images/mean_variance_1515443996_data_by_1515428959_model.svg)
+<img alt="histogram" src="./images/mean_variance_1515443996_data_by_1515428959_model.svg" width="888px"/>
 
 Repeated measurements of this signal characteristic over time capture the gradual decline in laser power output. This information permits the operator to predict impending laser failure and refurbish the laser. Laser failures waste costly material and upset production schedules. Data visualization is done by another Python script which generates charts.
 
-![probability distribution](images/prob_dist_1515443996_data_by_1515428959_model.svg)
+<img alt="probability distribution" src="./images/prob_dist_1515443996_data_by_1515428959_model.svg" width="888px"/>
 
 Credits
 -------
