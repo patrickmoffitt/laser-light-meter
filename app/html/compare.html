@@ -1,0 +1,74 @@
+<form id="compare" action="#" method="POST">
+  <div class="container-fluid">
+    <div class="form-group row has-warning">
+      <label class="col-md-2 col-form-label" for="laser-select">Laser</label>
+      <select class="col-md-2 col-lg-1 form-control" id="compare-laser-select"
+        aria-describedby="compareLaserSelectHelpInline"></select>
+      <small id="compareLaserSelectHelpInline"
+        class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The selected laser.</small>
+    </div>
+    <div class="form-group row has-warning">
+      <label class="col-md-2 col-form-label" for="operator-select">Model</label>
+      <select class="col-md-3 form-control custom-select" id="model-select"
+        aria-describedby="modelSelectHelpInline"></select>
+      <small id="modelSelectHelpInline"
+        class="col-md-5 col-lg-6 align-top form-text text-muted">
+        A list of previously trained models.</small>
+    </div>
+    <div class="form-group row has-warning">
+      <label class="col-md-2 col-form-label" for="operator-select">Sample</label>
+      <select class="col-md-3 form-control custom-select" id="sample-select"
+        aria-describedby="sampleSelectHelpInline"></select>
+      <small id="sampleSelectHelpInline"
+        class="col-md-5 col-lg-6 align-top form-text text-muted">
+        A list of previously collected samples.</small>
+    </div>
+    <div class="form-group row has-warning">
+      <label class="col-md-2 col-form-label"
+        for="operator-select">Operator</label>
+      <select class="col-md-3 form-control custom-select"
+        id="compare-operator-select"
+        aria-describedby="operatorSelectHelpInline"></select>
+      <small id="operatorSelectHelpInline"
+        class="col-md-5 col-lg-6 align-top form-text text-muted">
+        A list of previously added operators.</small>
+    </div>
+    <div id="compare-report" class="form-group row">
+      <hr>
+      <table id="compare-results" class="table table-striped table-sm">
+        <colgroup>
+          <col span="1" style="width: 20%;"><col span="1" style="width: 40%;">
+          <col span="1" style="width: 40%;"></colgroup>
+        <tr><th>Host Name</th><td id="host-name"></td>
+          <td>The host that ran the comparison.</tr>
+        <tr><th>Date</th><td id="date"></td>
+          <td>The date the comparison was done.</tr>
+        <tr><th>Predict. Mean</th><td id="error-proba-mean"></td>
+          <td>The mean value of the predictions.</tr>
+        <tr><th>Predict. S.D.</th><td id="error-proba-std-dev"></td>
+          <td>The standard deviation of the predictions.</tr>
+        <tr><th>Std Err. Mean</th><td id="error-proba-std-err-mean"></td>
+          <td>The standard error of the predictions.</tr>
+        <tr><th>Predict. Var.</th><td id="error-proba-variance"></td>
+          <td>The variance of the predictions.</tr>
+        <tr><th>S.D. Bins</th><td id="error-proba-bins"></td>
+          <td>The number of bins used to generate the histogram.</tr>
+        <tr><th>Predict. Score</th><td id="prediction-score"></td>
+          <td>The mean accuracy on the given test data and labels.</tr>
+        <tr><th>Std Err. Est.</th><td id="std-err-estimate"></td>
+          <td>The standard error of the predictions.</tr>
+        <tr><th>Proba. Dist.</th><td id="proba-dist-chart"></td>
+          <td>Shows the probability distribution for the
+            predicted categories.</td></tr>
+        <tr><th>Predict. Var.</th><td id="mean-variance-chart"></td>
+          <td>Shows the probability density for variance of the mean.</td></tr>
+      </table>
+      <hr>
+    </div>
+    <div class="form-group row offset-sm-1">
+      <button class="col-md-auto m-1 btn btn-primary justify-content-start p-0.5"
+       id="compare-submit" type="submit">Compare</button>
+    </div>
+  </div>
+</form>

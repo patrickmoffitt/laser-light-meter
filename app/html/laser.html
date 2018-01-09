@@ -1,0 +1,86 @@
+
+<form id="laser" action="#" method="POST">
+  <div class="container-fluid">
+    <div class="form-group row">
+      <label class="col-md-2 col-form-label" for="laser-id">Laser ID</label>
+      <input class="col-md-2 col-lg-1 form-control" type="text" id="laser-id"
+        aria-describedby="laserIdHelpInline" readonly>
+      <small id="laserIdHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        This is the number assigned to the laser below.</small>
+    </div>
+    <div class="form-group row">
+      <label class="col-md-2 col-form-label" for="laser-host-select">Laser Host</label>
+      <select class="col-md-2 col-lg-1 form-control" id="laser-host-select"
+        aria-describedby="laserHostSelectHelpInline"></select>
+      <small id="laserHostSelectHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        Select this laser's host.</small>
+    </div>
+    <div class="form-group row">
+      <label class="col-md-2 col-form-label" for="laser-select">Laser</label>
+      <select class="col-md-2 col-lg-1 form-control" id="laser-select"
+        aria-describedby="laserSelectHelpInline"></select>
+      <small id="laserSelectHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The selected laser.</small>
+    </div>
+    <div class="form-group row has-success">
+      <label class="col-md-2 col-form-label" for="beam-frequency-nm">Beam</label>
+      <input class="col-md-2 col-lg-1 form-control" type="number" id="beam-frequency-nm"
+          aria-describedby="beamFrequencyHelpInline">
+      <small id="beamFrequencyHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The laser frequency in nanometers.</small>
+    </div>
+    <div class="form-group row has-success">
+      <label class="col-md-2 col-form-label" for="power-rating-mw">Power</label>
+      <input class="col-md-2 col-lg-1 form-control" type="number" id="power-rating-mw"
+        aria-describedby="firingTimeHelpInline">
+      <small id="firingTimeHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The laser power rating in milliwatts.</small>
+    </div>
+    <div class="form-group row has-success">
+      <label class="col-md-2 col-form-label" for="laser-new-date">New</label>
+      <input class="col-md-2 col-lg-1 form-control" type="date" id="laser-new-date"
+          aria-describedby="laserNewDateHelpInline">
+      <small id="laserNewDateHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The date the laser was newly installed.</small>
+    </div>
+    <div class="form-group row">
+      <label class="col-md-2 col-form-label" for="laser-refurb-date">Rebuilt</label>
+      <input class="col-md-2 col-lg-1 form-control" type="date" id="laser-refurb-date"
+          aria-describedby="laserNewDateHelpInline">
+      <small id="laserNewDateHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The date the laser was last refurbished.</small>
+    </div>
+    <div class="form-group row has-success">
+      <label class="col-md-2 col-form-label" for="laser-description">Description</label>
+      <textarea rows="4" class="col-md-2 col-lg-1 form-control" id="laser-description"
+        aria-describedby="laser-descriptionHelpInline"></textarea>
+      <small id="laser-descriptionHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        A brief description of the laser unit.</small>
+    </div>
+    <div class="form-group row">
+      <label class="col-md-2 col-form-label" for="period">Period</label>
+      <p class="col-md-2 col-lg-1 form-control-static" id="period"
+        aria-describedby="periodHelpInline"></p>
+      <small id="periodHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The period for the PWM pin. (Enter password on edit host tab.)</small>
+    </div>
+    <div class="form-group row">
+      <label class="col-md-2 col-form-label" for="duty-cycle">Duty Cycle</label>
+      <p class="col-md-2 col-lg-1 form-control-static" id="duty-cycle"
+        aria-describedby="dutyCycleHelpInline"></p>
+      <small id="dutyCycleHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The duty cycle for the PWM pin. (Enter password on edit host tab.)</small>
+    </div>
+    <div class="form-group row">
+      <label class="col-md-2 col-form-label" for="firing-time">Firing Time</label>
+      <p class="col-md-2 col-lg-1 form-control-static" id="firing-time"
+        aria-describedby="firingTimeHelpInline"></p>
+      <small id="firingTimeHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The firing time for the PWM pin. (Enter password on edit host tab.)</small>
+    </div>
+    <div class="form-group row offset-sm-1">
+      <button class="col-md-auto m-1 btn btn-primary justify-content-start p-0.5"
+       id="laser-submit" type="submit">Submit</button>
+    </div>
+  </div>
+</form>

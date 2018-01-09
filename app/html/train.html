@@ -1,0 +1,62 @@
+
+<form id="model" action="#" method="POST">
+  <div class="container-fluid">
+    <div class="form-group row">
+      <label class="col-md-2 col-form-label" for="min-duty">Min. Duty</label>
+      <input class="col-md-2 col-lg-1 form-control" type="number" id="min-duty"
+        aria-describedby="minDutyHelpInline" value=20>
+      <small id="minDutyHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The minimum duty cycle.</small>
+    </div>
+    <div class="form-group row">
+      <label class="col-md-2 col-form-label" for="max-duty">Max. Duty</label>
+      <input class="col-md-2 col-lg-1 form-control" type="number" id="max-duty"
+        aria-describedby="maxDutyHelpInline" value=80>
+      <small id="maxDutyHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The maximum duty cycle.</small>
+    </div>
+    <div class="form-group row">
+      <label class="col-md-2 col-form-label" for="series">Samples</label>
+      <input class="col-md-2 col-lg-1 form-control" type="number" id="series"
+        aria-describedby="seriesHelpInline" value=50>
+      <small id="seriesHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The number of samples at each duty cycle.</small>
+    </div>
+    <div class="form-group row has-warning">
+      <label class="col-md-2 col-form-label" for="train-laser">Laser</label>
+      <p class="col-md-2 col-lg-1 form-control-static" id="train-laser"
+        aria-describedby="trainHostHelpInline"></p>
+      <small id="trainHostHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The selected laser.</small>
+    </div>
+    <div class="form-group row has-warning">
+      <label class="col-md-2 col-form-label" for="train-meter">Meter</label>
+      <p class="col-md-2 col-lg-1 form-control-static" id="train-meter"
+        aria-describedby="trainMeterHelpInline"></p>
+      <small id="trainMeterHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The selected meter.</small>
+    </div>
+    <div class="form-group row has-warning">
+      <label class="col-md-2 col-form-label" for="train-operator">Operator</label>
+      <p class="col-md-2 col-lg-1 form-control-static" id="train-operator"
+        aria-describedby="trainOperatorHelpInline"></p>
+      <small id="trainOperatorHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The selected operator.</small>
+    </div>
+    <div class="form-group row">
+      <label class="col-md-2 col-form-label" for="su-password">Password</label>
+      <input class="col-md-2 col-lg-1 form-control" type="password" id="su-password"
+        aria-describedby="suPasswordHelpInline">
+      <small id="suPasswordHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The (local) super user's password. Required for stty.</small>
+    </div>
+    <div class="form-group row">
+      <label class="col-md-9 col-form-label" for="train-status">Training Status</label>
+      <textarea class="col-md-9 form-control" id="train-status" rows="17"></textarea>
+    </div>
+    <div class="form-group row offset-sm-1">
+      <button class="col-md-auto m-1 btn btn-primary justify-content-start p-0.5"
+       id="train-submit" type="submit">Train</button>
+    </div>
+  </div>
+</form>

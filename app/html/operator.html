@@ -1,0 +1,30 @@
+
+<form id="operator" action="#" method="POST">
+  <div class="container-fluid">
+    <div class="form-group row">
+      <label class="col-md-2 col-form-label" for="operator-id">Operator ID</label>
+      <input class="col-md-2 col-lg-1 form-control" type="text" id="operator-id"
+        aria-describedby="operatorIdHelpInline" readonly>
+      <small id="operatorIdHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The number assigned to the username below.</small>
+    </div>
+    <div class="form-group row">
+      <label class="col-md-2 col-form-label" for="operator-select">Operator</label>
+      <select class="col-md-3 form-control custom-select" id="operator-select"
+        aria-describedby="operatorSelectHelpInline"></select>
+      <small id="operatorSelectHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        A list of previously added operators.</small>
+    </div>
+    <div class="form-group row has-success">
+      <label class="col-md-2 col-form-label" for="username">Username</label>
+      <input class="col-md-2 col-lg-1 form-control" type="text" id="username"
+        aria-describedby="usernameHelpInline">
+      <small id="usernameHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The name recorded as the "operator" using the light meter.</small>
+    </div>
+    <div class="form-group row offset-sm-1">
+      <button class="col-md-auto m-1 btn btn-primary justify-content-start p-0.5"
+       id="operator-submit" type="submit">Submit</button>
+    </div>
+  </div>
+</form>

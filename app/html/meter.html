@@ -1,0 +1,51 @@
+
+<form id="meter" action="#" method="POST">
+  <div class="container-fluid">
+    <div class="form-group row">
+      <label class="col-md-2 col-form-label" for="meter-id">Meter ID</label>
+      <input class="col-md-2 col-lg-1 form-control" type="text" id="meter-id"
+        aria-describedby="meterIdHelpInline" readonly>
+      <small id="meterIdHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The number assigned to the meter.</small>
+    </div>
+    <div class="form-group row">
+      <label class="col-md-2 col-form-label" for="meter-select">Meter</label>
+      <select class="col-md-2 col-lg-1 form-control custom-select" id="meter-select"
+        aria-describedby="meterSelectHelpInline"></select>
+      <small id="meterSelectHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        A list of previously added meters.</small>
+    </div>
+    <div class="form-group row has-success">
+      <label class="col-md-2 col-form-label" for="meter-name">Name</label>
+      <input class="col-md-2 col-lg-1 form-control" type="text" id="meter-name"
+        aria-describedby="meterNameHelpInline">
+      <small id="meterNameHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The short name of the light meter.</small>
+    </div>
+    <div class="form-group row has-success">
+      <label class="col-md-2 col-form-label" for="meter-new-date">Meter New</label>
+      <input class="col-md-2 col-lg-1 form-control" type="date" id="meter-new-date"
+        aria-describedby="meterNewDateHelpInline">
+      <small id="meterNewDateHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The date this meter went into service.</small>
+    </div>
+    <div class="form-group row has-success">
+      <label class="col-md-2 col-form-label" for="sample-rate-khz">Rate</label>
+      <input class="col-md-2 col-lg-1 form-control" type="text" id="sample-rate-khz"
+        aria-describedby="meterSampleRateHelpInline">
+      <small id="meterSampleRateHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The sampling rate in kilohertz.</small>
+    </div>
+    <div class="form-group row has-success">
+      <label class="col-md-2 col-form-label" for="meter-description">Description</label>
+      <textarea rows="4" class="col-md-2 col-lg-1 form-control" type="text" id="meter-description"
+        aria-describedby="meter-descriptionHelpInline"></textarea>
+      <small id="meter-descriptionHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        A brief description of the sensor/meter device.</small>
+    </div>
+    <div class="form-group row offset-sm-1">
+      <button class="col-md-auto m-1 btn btn-primary justify-content-start p-0.5"
+       id="meter-submit" type="submit">Submit</button>
+    </div>
+  </div>
+</form>

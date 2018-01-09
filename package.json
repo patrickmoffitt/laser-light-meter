@@ -1,30 +1,30 @@
 {
   "name": "laser-light-meter",
   "productName": "Laser Light Meter",
-  "firingTimeFactor": 7,
-  "version": "0.0.0",
+  "firingTimeFactor": 8,
+  "version": "0.0.4",
   "description": "A light (power) meter for PWM laser light.",
-  "main": "index.js",
+  "main": "main.js",
   "repository": "https://github.com/patrickmoffitt/laser-light-meter",
   "author": "Patrick K. Moffitt, CSM, M.A.",
   "license": "MIT",
   "devDependencies": {},
   "scripts": {
     "start": "electron .",
-    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=img/LightMeter.icns --prune=true --out=release-builds",
-    "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=img/LightMeter.ico --prune=true --out=release-builds",
-    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=img/LightMeter.png --prune=true --out=release-builds"
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=./app/img/LightMeter.icns --prune=true --out=release-builds",
+    "package-mac-dmg": "electron-installer-dmg './release-builds/Laser Light Meter-darwin-x64/Laser Light Meter.app' --out=./release-builds/ --icon=./app/img/LightMeter.icns --background=./app/img/teahouse_dmg.png --overwrite 'Laser Light Meter'",
+    "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=./app/img/LightMeter.ico --prune=true --out=release-builds",
+    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=./app/img/LightMeter.png --prune=true --out=release-builds"
   },
   "dependencies": {
     "app-module-path": "^2.2.0",
     "bootstrap": "4.0.0-alpha.5",
-    "cheerio": "^0.22.0",
-    "connect": "^3.6.0",
-    "electron": "1.4.1",
-    "jquery": "3.1.1",
-    "serve-static": "^1.12.1",
-    "sql.js": "^0.4.0",
-    "tether": "^1.4.0",
+    "cheerio": "^1.0.0-rc.2",
+    "connect": "^3.6.5",
+    "electron": "1.7.10",
+    "jquery": "^3.2.1",
+    "sql.js": "^0.5.0",
+    "tether": "^1.4.3",
     "treekill": "^1.0.0"
   },
   "standard": {

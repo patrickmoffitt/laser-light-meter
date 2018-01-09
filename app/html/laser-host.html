@@ -1,0 +1,51 @@
+
+<form id="laser-host" action="#" method="POST">
+  <div class="container-fluid">
+    <div class="form-group row">
+      <label class="col-md-2 col-form-label" for="host-id">Host ID</label>
+      <input class="col-md-2 col-lg-1 form-control" type="text" id="host-id"
+        aria-describedby="laserIdHelpInline" readonly>
+      <small id="laserIdHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        This is the number assigned to the host below.</small>
+    </div>
+    <div class="form-group row">
+      <label class="col-md-2 col-form-label" for="host-select">Hostname</label>
+      <select class="col-md-2 col-lg-1 form-control" id="host-select"
+        aria-describedby="hostSelectHelpInline"></select>
+      <small id="hostSelectHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        A list of previously added hosts.</small>
+    </div>
+    <div class="form-group row has-success">
+      <label class="col-md-2 col-form-label" for="hostname">Hostname</label>
+      <input class="col-md-2 col-lg-1 form-control" type="text" id="hostname"
+        aria-describedby="hostNameHelpInline">
+      <small id="hostNameHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The hostname of the host firing the laser.</small>
+    </div>
+    <div class="form-group row has-success has-warning">
+      <label class="col-md-2 col-form-label" for="ip-address">IP Address</label>
+      <input class="col-md-2 col-lg-1 form-control" type="text" id="ip-address"
+        aria-describedby="ipAddressHelpInline">
+      <small id="ipAddressHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The IP address of the host firing the laser.</small>
+    </div>
+    <div class="form-group row has-success has-warning">
+      <label class="col-md-2 col-form-label" for="rcmd-user">RCMD User</label>
+      <input class="col-md-2 col-lg-1 form-control" type="text" id="rcmd-user"
+        aria-describedby="remoteCommandUserHelpInline">
+      <small id="remoteCommandUserHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        A user with permission to fire the laser.</small>
+    </div>
+    <div class="form-group row has-warning">
+      <label class="col-md-2 col-form-label" for="rcmd-password">Password</label>
+      <input class="col-md-2 col-lg-1 form-control" type="password" id="rcmd-password"
+        aria-describedby="rcmdPasswordHelpInline">
+      <small id="rcmdPasswordHelpInline" class="col-md-5 col-lg-6 align-top form-text text-muted">
+        The RCMD user's password.</small>
+    </div>
+    <div class="form-group row offset-sm-1">
+      <button class="col-md-auto m-1 btn btn-primary justify-content-start p-0.5"
+       id="laser-host-submit" type="submit">Submit</button>
+    </div>
+  </div>
+</form>

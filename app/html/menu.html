@@ -1,0 +1,77 @@
+
+<!-- Button Group #1: Measure. -->
+<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+  <div class="btn-group" role="group">
+    <button class="btn btn-primary dropdown-toggle" type="button"
+      id="menuMeasure" data-toggle="dropdown" aria-haspopup="true"
+      aria-expanded="false">
+      <span id="scale" class="emoji1" aria-label="menuMeasure">⚖️</span>
+      Measure
+    </button>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuMeasure">
+      <a class="dropdown-item" href="#" onclick="view.showCompare()">
+        <span id="chart" class="emoji" ria-label="Measure">📊</span>
+        Graph Models
+      </a>
+      <a class="dropdown-item" href="#" onclick="view.showTrain()">
+        <img id="school" class="menu-img" src="../img/school.png">Train Model
+      </a>
+    </div>
+  </div>
+  <!-- Button Group #2: Host. -->
+  <div class="btn-group" role="group">
+    <button class="btn btn-info dropdown-toggle" type="button"
+    id="configHost" data-toggle="dropdown" aria-haspopup="true"
+    aria-expanded="false">
+      <img id="beagle" class="menu-img" src="../img/beagle.png">
+      <span id="selected-laser-host">None</span>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="configHost">
+      <a class="dropdown-item" href="#" onclick="view.showSelectLaserHost()">Select Host</a>
+      <a class="dropdown-item" href="#" onclick="view.showAddLaserHost()">Add Host</a>
+      <a class="dropdown-item" href="#" onclick="view.showEditLaserHost()">Edit Host</a>
+    </div>
+  </div>
+  <!-- Button Group #3: Laser. -->
+  <div class="btn-group" role="group">
+    <button class="btn btn-info dropdown-toggle" type="button"
+    id="configLaser" data-toggle="dropdown" aria-haspopup="true"
+    aria-expanded="false">
+      <img id="laser-img" class="menu-img" src="../img/laser.png">
+      Laser <span id="selected-laser-id">None</span>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="configLaser">
+      <a class="dropdown-item" href="#" onclick="view.showSelectLaser()">Select Laser</a>
+      <a class="dropdown-item" href="#" onclick="view.showAddLaser()">Add Laser</a>
+      <a class="dropdown-item" href="#" onclick="view.showEditLaser()">Edit Laser</a>
+    </div>
+  </div>
+  <!-- Button Group #4: Meter. -->
+  <div class="btn-group" role="group">
+    <button class="btn btn-info dropdown-toggle" type="button"
+    id="configMeter" data-toggle="dropdown" aria-haspopup="true"
+    aria-expanded="false">
+      <img id="sensor-img"  class="menu-img" src="../img/sensor.png">
+      <span id="selected-meter-name">None</span>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="configMeter">
+      <a class="dropdown-item" href="#" onclick="view.showSelectMeter()">Select Meter</a>
+      <a class="dropdown-item" href="#" onclick="view.showAddMeter()">Add Meter</a>
+      <a class="dropdown-item" href="#" onclick="view.showEditMeter()">Edit Meter</a>
+    </div>
+  </div>
+  <!-- Button Group #5: Operator. -->
+  <div class="btn-group" role="group">
+    <button class="btn btn-info dropdown-toggle" type="button"
+      id="configOperator" data-toggle="dropdown" aria-haspopup="true"
+      aria-expanded="false">
+      <span class="emoji3" aria-label="configOperator">👨‍💻</span>
+      <span id="operator-username">None</span>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="configOperator">
+      <a class="dropdown-item" href="#" onclick="view.showSelectOperator()">Select Operator</a>
+      <a class="dropdown-item" href="#" onclick="view.showAddOperator()">Add Operator</a>
+      <a class="dropdown-item" href="#" onclick="view.showEditOperator()">Edit Operator</a>
+    </div>
+  </div>
+</div>
