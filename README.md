@@ -1,6 +1,10 @@
 <img src="./app/img/LightMeter.png" height="75px" /> Laser Power Meter
 -----------------
-This application provides data collection, statistical analysis, and data visualization for a custom light meter. The meter measures the output of a diode laser using a photo-transistor. This converts the laser's signal into a pulse-width-modulated voltage that is measured by an Arduino [LeoStick](https://www.freetronics.com.au/products/leostick).
+This application provides data collection, statistical analysis, and data visualization for a custom light meter. The meter measures the output of a diode laser using a photo-transistor.
+
+![Schematic](images/LaserPowerMeter_V3.jpg)
+
+This converts the laser's signal into a pulse-width-modulated voltage that is measured by an Arduino [LeoStick](https://www.freetronics.com.au/products/leostick).
 
 ![Meter](images/light_meter.jpg)
 
@@ -23,6 +27,7 @@ Repeated measurements of this signal characteristic over time capture the gradua
 Credits
 -------
 <ul class="card-text">
+  <li>The firmware operates the micro-controller in free-running ADC mode accumulating measurements in a low-latency ring buffer provided by [Lyle Moffitt](https://github.com/lylemoffitt).
   <li>This application is powered by GitHub <strong>Electron</strong>.</li>
   <li>The responsive design of the user interface is provided
   by <strong>Bootstrap 4</strong>.</li>
