@@ -27,7 +27,7 @@ Repeated measurements of this signal characteristic over time capture the gradua
 Credits
 -------
 <ul class="card-text">
-  <li>The firmware operates the micro-controller in free-running ADC mode accumulating measurements in a low-latency ring buffer provided by [Lyle Moffitt](https://github.com/lylemoffitt).
+  <li>The firmware operates the micro-controller in free-running ADC mode accumulating measurements in a low-latency ring buffer provided by <a href="https://github.com/lylemoffitt">Lyle Moffitt</a>.
   <li>This application is powered by GitHub <strong>Electron</strong>.</li>
   <li>The responsive design of the user interface is provided
   by <strong>Bootstrap 4</strong>.</li>
