@@ -21,7 +21,7 @@
     "bootstrap": "4.0.0-alpha.5",
     "cheerio": "^1.0.0-rc.2",
     "connect": "^3.6.5",
-    "electron": "1.7.x",
+    "electron": "1.8.x",
     "jquery": "^3.2.1",
     "sql.js": "^0.5.0",
     "tether": "^1.4.3",
