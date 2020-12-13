@@ -52,3 +52,7 @@ Credits
 </ul>
 Patrick Moffitt, CSM, M.A.<br/>
 January 8, 2018<br/>
+
+Project Status
+--------------
+This project has been archived and is no longer being maintained by the author.
